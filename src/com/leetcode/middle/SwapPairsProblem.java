@@ -92,28 +92,28 @@ public class SwapPairsProblem {
         return next;
     }
 
-}
+    /**
+     * 链表的数据结构
+     */
+    static class ListNode {
+        int val;
+        ListNode next;
+        public ListNode(int x) { val = x; }
 
-/**
- * 链表的数据结构
- */
-class ListNode {
-    int val;
-    ListNode next;
-    public ListNode(int x) { val = x; }
-
-    @Override
-    public String toString() {
-        StringBuilder builder = new StringBuilder("ListNode: [");
-        ListNode node = this;
-        while (null != node) {
-            builder.append(node.val).append("->");
-            node = node.next;
+        @Override
+        public String toString() {
+            StringBuilder builder = new StringBuilder("ListNode: [");
+            ListNode node = this;
+            while (null != node) {
+                builder.append(node.val).append("->");
+                node = node.next;
+            }
+            String result = builder.toString();
+            if (result.lastIndexOf(">") == result.length() - 1) {
+                result = result.substring(0, result.length() - 2);
+            }
+            return result + "]";
         }
-        String result = builder.toString();
-        if (result.lastIndexOf(">") == result.length() - 1) {
-            result = result.substring(0, result.length() - 2);
-        }
-        return result + "]";
     }
+
 }
