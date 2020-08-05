@@ -3,6 +3,8 @@ package com.leetcode.hard;
 /**
  * 寻找两个正序数组的中位数
  *
+ * https://blog.csdn.net/chen_xinjia/article/details/69258706
+ *
  * @author 10005655 tianluye
  */
 public class FindSortedTwoArrayMedian {
